@@ -3,7 +3,7 @@ const projectData = {
         title: 'Bulsu Space : Academic Community Social Platform',
         subtitle: 'Campus community and collaboration showcase (Capstone Project)',
         techStackDetails: 'React.js, Node.js, Firebase, JavaScript, HTML, CSS, FCM',
-        repo: 'https://github.com/zildian-tablan',
+        repo: 'https://github.com/zildian-tablan/BulSU-Space',
         liveDemo: '#projects',
         images: [
             'Bulsuspace/Bulsuspace1.png',
@@ -21,8 +21,8 @@ const projectData = {
         title: 'Core Gear Tech',
         subtitle: 'E-commerce accessory storefront concept',
         techStackDetails: 'PHP, MySQL, HTML, CSS, JavaScript',
-        repo: 'https://github.com/zildian-tablan',
-        liveDemo: '#projects',
+        repo: 'https://github.com/zildian-tablan/CoreGearTech',
+        liveDemo: 'https://coregeartech.freehosting.dev/',
         images: [
             'cgt/cgt1.png',
             'cgt/cgt2.png',
@@ -59,8 +59,8 @@ const projectData = {
         title: 'RuneBound',
         subtitle: 'Game concept with action-first design',
         techStackDetails: 'Unity, C#',
-        repo: 'https://github.com/zildian-tablan',
-        liveDemo: '#projects',
+        repo: 'https://github.com/zildian-tablan/Rune-Bound',
+        liveDemo: 'https://zil30.itch.io/rune-bound',
         images: [
             'runebound/runebound1.png',
             'runebound/runebound2.png',
@@ -83,7 +83,7 @@ const projectData = {
         title: 'Elevating IQ',
         subtitle: 'Interactive educational learning experience',
         techStackDetails: 'Java',
-        repo: 'https://github.com/zildian-tablan',
+        repo: 'https://github.com/zildian-tablan/Elevating-IQ',
         liveDemo: '#projects',
         images: [
             'elevatingIQ/elevatingIQ1.png',
@@ -100,7 +100,7 @@ const projectData = {
         title: 'Titan Cruise Booking System',
         subtitle: 'Cruise booking and trip discovery system',
         techStackDetails: 'Java',
-        repo: 'https://github.com/zildian-tablan',
+        repo: 'https://github.com/zildian-tablan/TITAN-Cruise',
         liveDemo: '#projects',
         images: [
             'TitanCruise/TitanCruise1.png',
@@ -143,7 +143,7 @@ document.querySelectorAll('[data-project]').forEach(button => {
         const showLiveDemo = button.dataset.project === 'cgt' || button.dataset.project === 'runebound';
         modalActions.innerHTML = `
             <a class="project-modal-link" href="${data.repo}" target="_blank" rel="noopener">Repo</a>
-            ${showLiveDemo ? `<a class="project-modal-link" href="${data.liveDemo}">Live demo</a>` : ''}
+            ${showLiveDemo ? `<a class="project-modal-link" href="${data.liveDemo}" target="_blank" rel="noopener">Live demo</a>` : ''}
         `;
 
         const carouselInner = document.getElementById('projectCarouselInner');
