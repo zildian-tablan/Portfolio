@@ -2,7 +2,7 @@ const projectData = {
     bulsuspace: {
         title: 'Bulsu Space : Academic Community Social Platform',
         subtitle: 'Campus community and collaboration showcase (Capstone Project)',
-        techStackDetails: 'React.js, Node.js, Firebase, JavaScript, HTML, CSS, FCM',
+        techStackDetails: 'React.js, Node.js, Firebase, TypeScript, HTML, CSS, FCM',
         repo: 'https://github.com/zildian-tablan/BulSU-Space',
         liveDemo: '#projects',
         images: [
@@ -140,7 +140,7 @@ document.querySelectorAll('[data-project]').forEach(button => {
         `;
 
         const modalActions = document.getElementById('projectModalActions');
-        const showLiveDemo = button.dataset.project === 'cgt' || button.dataset.project === 'runebound';
+        const showLiveDemo = button.dataset.project === 'runebound';
         modalActions.innerHTML = `
             <a class="project-modal-link" href="${data.repo}" target="_blank" rel="noopener">Repo</a>
             ${showLiveDemo ? `<a class="project-modal-link" href="${data.liveDemo}" target="_blank" rel="noopener">Live demo</a>` : ''}
